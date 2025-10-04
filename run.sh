@@ -287,6 +287,9 @@ while true; do
     
     # Increase check counter
     TOTAL_CHECKS=$((TOTAL_CHECKS + 1))
+
+    # Display progress in real-time
+    show_progress "$TOTAL_CHECKS" "$MAX_ITERATIONS"
     
     # Process request result
     if [ -z "$RESPONSE" ]; then
@@ -351,8 +354,6 @@ while true; do
         fi
     fi
     
-    # Display progress in real-time
-    show_progress "$TOTAL_CHECKS" "$MAX_ITERATIONS"
     
     sleep $INTERVAL_SEC
 done
