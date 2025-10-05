@@ -45,7 +45,7 @@ mkdir -p "$LOGS_DIR"
 
 # Create unique log file name
 API_NAME=$(echo "$API_URL" | tr -d 'https://:/')
-LOG_FILE_NAME="api_monitor_${API_NAME}_$(date +%Y%m%d_%H%M%S).log"
+LOG_FILE_NAME="api_tracker_${API_NAME}_$(date +%Y%m%d_%H%M%S).log"
 LOG_FILE="$LOGS_DIR/$LOG_FILE_NAME"
 
 # Variables for counting

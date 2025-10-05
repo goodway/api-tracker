@@ -1,4 +1,4 @@
-# API Monitoring Tool
+# 📊 API Tracker
 
 A simple and efficient bash script for monitoring API endpoints with real-time status updates, detailed statistics, and configurable analysis modes.
 
@@ -21,13 +21,19 @@ A simple and efficient bash script for monitoring API endpoints with real-time s
 ## 🛠️ Usage
 
 ```bash
-./api_monitor.sh <API_URL> <total_time_minutes> <interval_seconds> <threshold_ms> [timeout_seconds] [analysis_mode]
+./run.sh <API_URL> <total_time_minutes> <interval_seconds> <threshold_ms> [timeout_seconds] [analysis_mode]
 ```
 
 ### Example:
 
 ```bash
-./api_monitor.sh https://api.example.com/endpoint 30 300 1500 5 1
+./run.sh "https://api.example.com/endpoint" 30 300 1500 5 1
+```
+
+### One-liner Installation and Execution
+
+```bash
+curl -s https://raw.githubusercontent.com/goodway/api-tracker/main/run.sh | bash -s "https://api.example.com/endpoint" 30 300 1500 5 1
 ```
 
 ### Parameters:
